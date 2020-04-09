@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include navbar.html %}
+        {% include header.html %}
+        <main>
+            <div class="post-heading" style= "text-align:center;">
+                <h1 style="margin-bottom: initial;">{{ page.title }}</h1>
+                {% if page.subtitle %}
+                <h2 class="subheading" >{{ page.subtitle }}</h2>
+                {% endif %}
+                <span class="meta">Posted by
+                  <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
+                  on {{ page.date | date: '%B %d, %Y' }} &middot;
+                </span>
+            </div>
+            <section style="margin-right: 30%;width: 737px; margin-top: 10px;">
+                {{ content }}
+            </section>
+        </main>
+        {% include footer.html %}
+    </body>
+</html>
