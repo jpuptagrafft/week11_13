@@ -1,0 +1,32 @@
+# Sample site navigation bar links
+
+- title: Home
+  url: /
+- title: Speakers
+  url: /speakers/
+- title: Luncheons
+  url: /luncheons/
+- title: Tickets
+  url: /tickets/
+- title: Announcements
+  url: /posts/
+- title: About us
+  url: /aboutus/
+  subfolderitems:
+    - title: Our History
+      url: "#"
+    - title: Board of Directors
+      url: "#"
+    - title: Past Speakers
+      url: "#"
+    - title: Contact Information
+      url: "#"
+
+# - title: Tags
+#   url: /tags/
+# - title: Recipes
+#   url: /recipes/
+# - title: Search
+#   url: /search/
+# - title: External Page
+#   url: https://the-page.com/you-want-to-link-to.html
